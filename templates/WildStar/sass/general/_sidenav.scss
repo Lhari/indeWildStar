@@ -1,0 +1,24 @@
+aside.left {
+	height:100%;
+	background: #111;
+	display:table-cell;
+	margin-left:0;
+	color: #fff;
+	padding-right:3em;
+	> div {
+		margin-bottom:2em;
+	}
+	.section-heading {
+		border-bottom: $border-width solid $blue-color;
+		font-weight: 100;
+		margin-bottom:1.2em;
+	}
+
+}
+.side--hide {
+			text-transform: uppercase;
+			color: #414141;
+			font-size:8px;
+			margin: 4px 0;
+			cursor: pointer;
+}

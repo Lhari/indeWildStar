@@ -204,4 +204,5 @@
 /index.php
 /joomla.xml
 /*.txt
-/.gitignore
+/templates/WildStar/node_modules/*
+/templates/WildStar/.sass-cache/*

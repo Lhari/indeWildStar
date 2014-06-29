@@ -1,0 +1,37 @@
+.slider {
+	background: url('../images/slider-background-sample.jpg'); background-position: 0 50%;
+	height:530px;
+}
+
+.slider__content {
+		position: relative;
+		color:#fff;
+		width:1024px;
+		margin: 0 auto;
+		top: 200px;
+		.slider__content--arrow {
+			vertical-align: middle;
+		}
+
+		.slider__content--fill {
+			div {
+				margin-top:2em;
+				max-width:500px;
+			}
+			img {box-shadow: 5px 0 15px #4c1c06; margin: 0 3em; float:left;}
+			button {
+				box-shadow: 2px 0 6px rgba(#231f20, 0.2);
+				background: rgba(#fff, 0.7);
+				border: none; color: #ba5c4e;
+				text-transform: uppercase;
+				padding: 10px 14px;
+				font-weight: 500;
+				margin-top:14px;
+				font-size:10px;
+			}
+			h1 {font-weight: normal; margin-bottom:14px;}
+			p {line-height: 30px;}
+		}
+
+
+	}

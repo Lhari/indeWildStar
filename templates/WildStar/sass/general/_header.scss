@@ -1,0 +1,34 @@
+
+header {
+	height:50px;
+	color:#fff;
+	font-size:14px;
+	z-index: 999;
+	padding-top:0.7em;
+	background: $dark-red-color;
+}
+.header__profile--image {
+	border-radius: 5px;
+	overflow:hidden;
+	height:32px;
+	width:32px;
+	background: #ff0;
+}
+.header__profile--value, .header__profile--icon {
+	color: $blue-color;
+}
+.header__profile--value {
+	margin-right: 0.3em;
+}
+.header__profile, .header__profile--logout {
+	margin-left:1.5em;
+	line-height: 33px;
+}
+.header__profile--welcome {
+	padding-right: 1.5em;
+	border-right: 1px solid rgba(255,255,255,0.4);
+	margin-right: 0.7em;
+}
+.header__profile i {
+	margin: 0 0.2em 0 1em;
+}

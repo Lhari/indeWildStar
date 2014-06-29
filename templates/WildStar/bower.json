@@ -1,0 +1,24 @@
+{
+  "name": "Bower test app",
+  "version": "0.0.1",
+  "directory": "js",
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "jquery": "~1.10.2"
+  },
+  "private": true,
+  "description": "Test app for Bower",
+  "main": "gulpfile.js",
+  "authors": [
+    "Kasper@klean.dk"
+  ],
+  "license": "MIT",
+  "homepage": "www.indecisive.ws",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
