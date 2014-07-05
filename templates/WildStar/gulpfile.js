@@ -8,38 +8,10 @@ var gulp = require('gulp'),
 	minifyCSS = require('gulp-minify-css'),
 	rename = require("gulp-rename"),
 	unzip = require('gulp-unzip'),
-	rimraf = require('gulp-rimraf'),
 	glob = require('glob'),
 	clean = require('gulp-rimraf'),
 	ext = require('gulp-ext-replace');
  
-var EXPRESS_PORT = 4000;
-var EXPRESS_ROOT = __dirname;
-var LIVERELOAD_PORT = 35729;
-
-
-function startExpress() {
- 
-var express = require('express');
-	var app = express();
-	app.use(require('connect-livereload')());
-	app.use(express.static(EXPRESS_ROOT));
-	app.listen(EXPRESS_PORT);
-}
-
-var lr;
-function startLivereload() {
- 
-	lr = require('tiny-lr')();
-	lr.listen(LIVERELOAD_PORT);
-}
-
-function notifyLivereload(event) {
-
-	 gulp.src(event.path, {read: false})
-	.pipe(require('gulp-livereload')(lr));
-
-}
 
 var fontsToMove = [
 	'.tmp/**/*.svg',
@@ -105,9 +77,7 @@ gulp.task('js-bottom', function() {
 
 })
 gulp.task('watch', function() {
-	startExpress();
-	startLivereload();
-
+	
 	gulp.watch('dependencies/*.zip', ['dependencies']);
 	gulp.watch('sass/**/*.scss', ['styles']);
 	gulp.watch('js/partials/*.js', ['js-top']);
