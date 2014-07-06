@@ -85,11 +85,4 @@ gulp.task('watch', function() {
 	gulp.watch('dependencies/*.zip', ['clean-up']);
 	gulp.watch('dependencies/*.zip', ['clean-up-tmp']);
 
-	gulp.watch('dependencies/*.zip', notifyLivereload);
-	gulp.watch('sass/**/*.scss', notifyLivereload);
-	gulp.watch('js/partials/*.js', notifyLivereload);
-	gulp.watch('js/partials/*.js', notifyLivereload);
-	gulp.watch('dependencies/*.zip', notifyLivereload);
-	gulp.watch('dependencies/*.zip', notifyLivereload);
-
 });

@@ -73,8 +73,6 @@ $breakpoints: 'palm', 'lap', 'lap-and-up', 'portable', 'desk', 'desk-wide';
   @include clearfix;
 }
 
-$spacing: 22px;
-
 .grid {
   @extend %clearfix;
   float: left;
@@ -99,4 +97,8 @@ $spacing: 22px;
   > .grid {
     float: right;
   }
+}
+
+img.grid {
+  padding: 0!important;
 }

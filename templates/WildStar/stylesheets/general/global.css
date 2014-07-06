@@ -1,6 +1,5 @@
 body {
   width: 100%;
-  background: #111;
   font-family: Exo; }
 
 .wrapper {
@@ -14,20 +13,10 @@ body {
   width: 100%; }
 
 .content-wrapper {
-  background: #111111;
-  /* Old browsers */
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #111111), color-stop(50%, #111111), color-stop(50%, #ffffff), color-stop(100%, #ffffff));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, #111111 0%, #111111 50%, #ffffff 50%, #ffffff 100%);
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
-  /* IE10+ */
   background: -webkit-gradient(linear, left top, right top, from(#111111), color-stop(50%, #111111), color-stop(50%, #ffffff), to(#ffffff));
+  background: -webkit-linear-gradient(left, #111111 0%, #111111 50%, #ffffff 50%, #ffffff 100%);
   background: linear-gradient(to right, #111111 0%, #111111 50%, #ffffff 50%, #ffffff 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#ffffff',GradientType=1 );
-  /* IE6-9 */ }
+  float: left; }
 
 .fixed-top {
   position: fixed;
@@ -35,40 +24,45 @@ body {
   z-index: 99; }
 
 *:before, *:after, * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: exo; }
 
-.pull-right {
+.right {
   float: right; }
 
-.pull-left {
+.left {
   float: left; }
 
 .is-hidden {
   display: none; }
 
+.spacing-left {
+  margin-left: 8.33333%; }
+
 .row {
   display: block;
   margin-top: 0.5em; }
+
+img.grid {
+  padding: 0 !important; }
 
 .section-heading {
   clear: both;
   display: block;
   width: 100%;
-  min-height: 30px; }
+  min-height: 30px;
+  border-bottom: 0.15em solid #e5e5e5; }
 
-div#content {
-  background: #fff; }
-  div#content section {
-    height: 100%;
-    display: table-cell; }
+div#content section {
+  height: 100%;
+  display: table-cell;
+  background: #ffffff; }
 
 footer {
-  background: #111;
+  background: #111111;
   height: 100px; }
-
 
 h2 {
   text-transform: uppercase;

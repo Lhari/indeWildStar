@@ -1,0 +1,20 @@
+// --- Font size
+
+$font-basic: 16px;
+
+// --- Spacing, margin and padding vars
+
+$spacing: $font-basic * 1.38;
+$border-width: 0.15em;
+
+// --- Colors
+
+$shadow-color: #4c1c06;
+
+// --- Sizes
+
+// --- Extendables
+
+.box-shadow {
+	box-shadow: 5px 0 15px $shadow-color;
+}
