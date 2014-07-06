@@ -207,4 +207,8 @@
 /templates/WildStar/node_modules/*
 /templates/WildStar/.sass-cache/*
 /templates/*.zip
+<<<<<<< HEAD
 /templates/_WildStar
+=======
+/templates/_WildStar
+>>>>>>> origin/master
