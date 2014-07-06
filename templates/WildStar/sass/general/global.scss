@@ -1,0 +1,100 @@
+$base-color1: #ffffff;
+$base-color2: #111111;
+
+$border-color: #e5e5e5;
+$transparent-border: rgba(255,255,255,0.4);
+
+$blue-color: #7687de;
+$green-color: #5ffaad;
+$red-color: #fc6667;
+$orange-color: #ffa336;
+$purple-color: #a287cc;
+$light-gray-color: #cccccc;
+$dark-red-color: #331d11;
+
+body {
+	width: 100%;
+	font-family: Exo;
+}
+
+.wrapper {
+	margin: 0 auto;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.full-width {
+	width:100%;
+}
+
+.content-wrapper {
+	background: linear-gradient(to right, $base-color2 0%,$base-color2 50%,$base-color1 50%,$base-color1 100%);
+	float:left;
+}
+
+.fixed-top {
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+
+*:before, *:after, * {
+	box-sizing: border-box;
+	font-family: exo;
+}
+
+.right {
+	float:right;
+}
+.left {
+	float:left;
+}
+.is-hidden {
+	display:none;
+}
+.spacing-left {
+	margin-left: 8.33333%;
+}
+.row {
+	display: block;
+	margin-top: 0.5em;
+}
+
+.section-heading {
+	clear:both;
+	display: block;
+	width:100%;
+	min-height: 30px;
+	border-bottom: 0.15em solid $border-color;
+}
+
+div#content {
+
+	section {
+		height:100%;
+		display:table-cell;
+		background: $base-color1;
+	}
+}
+
+footer {
+	background: $base-color2;
+	height:100px;
+}
+
+h1 {
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+h3 {
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 16px;
+}

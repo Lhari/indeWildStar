@@ -1,0 +1,28 @@
+nav {
+	background: rgba(#fff, 0.7);
+	height:75px;
+	box-shadow: 2px 0 6px rgba(0,0,0, 0.2);
+	z-index: 999;
+	
+	li {
+		display: inline-block;
+		margin-top:26px;
+		float:left;
+		&.active a {
+				background: $dark-red-color;
+				color: $base-color1;
+		}
+		a {
+			padding: 28px 40px;
+			text-decoration: none;
+			color: $base-color2;
+			transition: all 500ms ease;
+			text-transform: uppercase;
+			font-size: $font-basic;
+			&:hover {
+				background: $dark-red-color;
+				color: $base-color1;
+			}
+		}
+	}
+}
