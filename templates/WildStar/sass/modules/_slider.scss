@@ -1,12 +1,13 @@
 .slider {
-	background: url('../images/slider-background-sample.jpg'); background-position: 0 50%;
+	background: $slider-background;
+	background-position: 0 50%;
 	padding-top: 11%;
 	padding-bottom:3%;
 }
 
 .slider__content {
 	position: relative;
-	color: $base-color1;
+	color: $slider-color;
 	margin: 0 auto;
 
 	.slider__content--arrow {
@@ -15,7 +16,6 @@
 
 .slider__content--fill {
 		div {
-			margin-top:2em;
 			max-width:500px;
 		}
 
@@ -23,26 +23,16 @@
 			@extend .box-shadow;
 			float:left;
 		}
-	
-		button {
-			box-shadow: 2px 0 6px rgba(#231f20, 0.2);
-			background: rgba(#fff, 0.7);
-			border: none;
-			color: #ba5c4e;
-			text-transform: uppercase;
-			padding: 10px 14px;
-			font-weight: 500;
-			margin-top:14px;
-			font-size:10px;
-		}
 
 		h1 {
-			font-weight: normal;
-			margin-bottom:14px;
+			@extend .bold;
+			@extend .headline;
+			margin-bottom: $spacing/2;
+			font-size: $font-xxxlarge;
 		}
 
 		p {
-			line-height: 30px;
+			line-height: $spacing;
 		}
 	}
 }

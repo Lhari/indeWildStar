@@ -2,9 +2,8 @@
 <html>
     <head>
         <jdoc:include type="head" />
-        <link rel="stylesheet" href="templates/wildstartemplate/stylesheets/main.css" type="text/css" />
-        <script src="templates/wildstartemplate/all.top.min.js" type="text/javascript"></script>
-
+        <link rel="stylesheet" href="templates/wildstar/stylesheets/main.css" type="text/css" />
+        <script src="templates/wildstar/all.top.min.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="size-12 fixed-top" style="z-index: 99;">

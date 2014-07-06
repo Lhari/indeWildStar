@@ -1,26 +1,27 @@
 nav {
-	background: rgba(#fff, 0.7);
-	height:75px;
-	box-shadow: 2px 0 6px rgba(0,0,0, 0.2);
+	background: rgba($base-color1, 0.9);
+	box-shadow: 0 2px 2px rgba(0,0,0, 0.2);
 	z-index: 999;
+	@extend .headline;
 	
 	li {
-		display: inline-block;
-		margin-top:26px;
-		float:left;
+		margin: $spacing 0;
+		@extend .left;
+
 		&.active a {
-				background: $dark-red-color;
+				background: $base-color2;
 				color: $base-color1;
 		}
+
 		a {
-			padding: 28px 40px;
+			padding: $spacing $spacing*2;
 			text-decoration: none;
 			color: $base-color2;
-			transition: all 500ms ease;
+			@extend .hover;
 			text-transform: uppercase;
-			font-size: $font-basic;
+			font-size: $font-normal;
 			&:hover {
-				background: $dark-red-color;
+				background: $base-color2;
 				color: $base-color1;
 			}
 		}

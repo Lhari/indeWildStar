@@ -1,8 +1,19 @@
 $base-color1: #ffffff;
 $base-color2: #111111;
 
+$slider-color: $base-color1;
+
 $border-color: #e5e5e5;
-$transparent-border: rgba(255,255,255,0.4);
+$transparent-border: rgba($base-color1 ,0.4);
+
+// --- Input Colors
+
+$dark-background: #000000;
+$light-background: #ffffff;
+
+$input-text: #777777;
+
+$inactive: $input-text;
 
 $blue-color: #7687de;
 $green-color: #5ffaad;
@@ -10,11 +21,11 @@ $red-color: #fc6667;
 $orange-color: #ffa336;
 $purple-color: #a287cc;
 $light-gray-color: #cccccc;
-$dark-red-color: #331d11;
 
 body {
 	width: 100%;
-	font-family: Exo;
+	font-family: "Open Sans";
+	color: $base-color2;
 }
 
 .wrapper {
@@ -43,7 +54,6 @@ body {
 
 *:before, *:after, * {
 	box-sizing: border-box;
-	font-family: exo;
 }
 
 .right {
@@ -69,6 +79,7 @@ body {
 	width:100%;
 	min-height: 30px;
 	border-bottom: 0.15em solid $border-color;
+	color: $base-color2;
 }
 
 div#content {
@@ -89,12 +100,23 @@ h1 {
 }
 
 h2 {
-	text-transform: uppercase;
+	@extend .headline;
 	font-weight: 400;
 }
 
 h3 {
 	font-weight: 400;
-	text-transform: uppercase;
-	font-size: 16px;
+	@extend .headline;
+	font-size: $font-normal;
+	color: $base-color1;
+}
+
+li {
+	list-style: none;
+}
+
+@media only screen and (max-width: 680px) {
+	.mobile--is-hidden {
+		display:none;
+	}
 }

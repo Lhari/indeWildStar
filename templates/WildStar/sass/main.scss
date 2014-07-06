@@ -1,11 +1,13 @@
 // --- Settings
 
-@import url(http://fonts.googleapis.com/css?family=Exo:400,500,200,100,300,700,900);
-@import 'settings/vars';
-@import 'fontello';
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,600,100,300,200);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800);
+
+@import 'settings/_vars';
+@import 'general/_fontello';
 // @import 'settings/_settings';
 @import 'responsive/_grid';
-@import 'general/global';
+@import 'general/_global';
 
 // --- Build
 
@@ -21,5 +23,8 @@
 @import 'modules/_members';
 
 // --- Assets
+
+@import 'assets/_form';
+@import 'assets/_button';
 
 @import 'assets/_shame';

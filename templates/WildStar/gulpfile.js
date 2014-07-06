@@ -34,8 +34,9 @@ gulp.task('dependencies',function() {
 
   	file = glob.sync('tmp/**/fontello.css');
   	gulp.src(file)
+  	.pipe(rename('_fontello.css'))
   	.pipe(ext('.scss'))
-  	.pipe(gulp.dest('sass'))
+  	.pipe(gulp.dest('sass/general/'))
 })
 
 gulp.task('clean-up', function() {
@@ -67,10 +68,10 @@ gulp.task('js-top', function() {
 		'js/partials/*.js'
 		])
 	.pipe(changed('js/**'))
-	.pipe(concat('app.top.js'))
+	.pipe(concat('all.top.js'))
 	.pipe(gulp.dest('js'))
 	.pipe(uglify())
-	.pipe(concat('app.top.min.js'))
+	.pipe(concat('all.top.min.js'))
 	.pipe(gulp.dest('js'))
 })
 gulp.task('js-bottom', function() {

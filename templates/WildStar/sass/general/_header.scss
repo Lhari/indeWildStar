@@ -1,11 +1,10 @@
 
 header {
-	height:50px;
 	color: $base-color1;
-	font-size: $font-basic;
+	font-size: $font-normal;
 	z-index: 999;
-	padding-top:0.7em;
-	background: $dark-red-color;
+	padding: $spacing/3 0;
+	background: $base-color2;
 }
 
 .header__profile--image {
@@ -15,8 +14,24 @@ header {
 	width:32px;
 }
 
-.header__profile--value, .header__profile--icon {
-	color: $blue-color;
+.header__profile--data {
+	color: $base-color1;
+	@extend .hover;
+	@extend .headline;
+	margin-right: $spacing/2;
+
+	span {
+		font-size: $font-small;
+	}
+
+	&:hover {
+		color: $blue-color;
+	}
+
+	&.disabled {
+		color: $inactive;
+		@extend .disable-hover;
+	}
 }
 
 .header__profile--value {
@@ -25,15 +40,31 @@ header {
 
 .header__profile, .header__profile--logout {
 	margin-left: $spacing/2;
-	line-height: 33px;
+	line-height: 29px;
 }
 
 .header__profile--welcome {
-	padding-right: 1.5em;
+	font-size: $font-small;
 	border-right: 1px solid $transparent-border;
 	margin-right: $spacing/2;
+	display: inline-block;
+	height: 100%;
 }
 
-.header__profile i {
-	margin: 0 0.2em 0 1em;
+.js-offcanvas {
+	display:none;
+}
+
+.js-offcanvas__toggle {
+	float:right;
+	height:32px;
+	width:32px;
+	text-align: center;
+	vertical-align: middle;
+	@extend .hover;
+	color: $inactive;
+
+	&:hover {
+		color: $base-color1;
+	}
 }

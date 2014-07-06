@@ -1,11 +1,11 @@
 aside.left {
 	padding-top: 1%;
 	height:100%;
-	background: #111;
+	background: $base-color2;
 	display:table-cell;
 	margin-left:0;
-	color: #fff;
-	padding-right:3em;
+	color: $base-color1;
+	padding-right: 2%;
 	> div {
 		margin-bottom:2em;
 	}

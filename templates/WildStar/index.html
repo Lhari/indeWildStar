@@ -3,25 +3,33 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Indecisive WildStar v2</title>
+		<script src="js/all.top.min.js" type="text/javascript"></script>
 		<link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<div class="full-width fixed-top" style="z-index: 99;">
-			<header>
-				<div class="grid size-12">
+		<div class="js-offcanvas">
+			Log out
+		</div>
+			<header class="grid size-12">
 				<div class="header__profile--image left">
-					<img src="" alt="" />
+					<img src="" alt="." />
 				</div>
 				<div class="header__profile left">
-					<span class="header__profile--welcome">Welcome Lhari</span>
-					<i class="header__profile--icon icon-envelope"></i> <span class="header__profile--value">3</span> Messages
-					<i class="header__profile--icon icon-user"></i> <span class="header__profile--value">2</span> Buddies
-				</div>
-					<span class="header__profile--logout right">Logout</span>
+					<span class="header__profile--welcome">
+						Welcome Lhari
+						<a class="js-offcanvas__toggle"><i class="icon-down-dir"></i></a>
+					</span>
+					<a class="header__profile--data">
+						<i class="icon-envelope"></i> <span>3</span>
+					</a>
+					<a class="header__profile--data disabled">
+						<i class="icon-user"></i> <span>0</span>
+					</a>
+					
 				</div>
 			</header>
-			<nav style="z-index: 999;">
-				<div class="grid size-12">
+			<nav class="grid size-12 mobile--is-hidden">
 					<ul>
 						<li class="active"><a href="*/">home</a></li>
 						<li><a href="/">forums</a></li>
@@ -30,26 +38,25 @@
 						<li><a href="/">apply</a></li>
 						<li><a href="/">media</a></li>
 					</ul>
-				</div>
 			</nav>
 		</div>
 		<div class="slider grid size-12">
 			<div class="slider__content grid size-12">
 				<div class="slider__content--arrow right grid size-1"><i class="icon-angle-right"></i></div>
 				<div class="slider__content--arrow left grid size-1"><i class="icon-angle-left"></i></div>
-				<div class="slider__content--fill grid size-10">
-					<img src="images/slider-image-sample.jpg" alt="" class="grid size-5" />
-					<div class="grid size-6 spacing-left">
+				<div class="slider__content--fill grid size-10 size-12--palm">
+					<img src="images/slider-image-sample.jpg" alt="Slider" class="grid size-5 size-12--palm" />
+					<div class="grid size-6 size-12--palm spacing-left">
 						<h1>Our first Victory!</h1>
-						<p>Well we finally took down the first boss with 40 of our finest hardened warriors</p>
-						<button>read more</button>
+						<p class="mobile--is-hidden">Well we finally took down the first boss with 40 of our finest hardened warriors</p>
+						<button class="button button--secondary light">read more</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="content-wrapper">
-			<div id="content" class="grid size-12">
-				<aside class="grid size-2 left side">
+		<div class="content-wrapper grid size-12">
+			<div id="content">
+				<aside class="grid size-2 size-12--palm left side">
 					<div class="side__recruitment">
 						<div class="section-heading row">
 							<span class="side--hide js_more-toggle right right">hide</span>
@@ -114,7 +121,7 @@
 						</div>
 					</div>
 				</aside>
-				<section class="grid size-10 article">
+				<section class="grid size-10 size-12--palm article">
 					<article id="first-victory" class="article last">
 						<div class="section-heading">
 							<div class="right article__info">
@@ -125,7 +132,7 @@
 							</div>
 							<h2>our first victory</h2>
 						</div>
-						<div class="article__image" class="grid size-12">
+						<div class="grid size-12 article__image">
 							<img src="images/slider-image-sample.jpg" alt="" class="grid size-10" />
 						</div>
 						<div class="article__text grid size-12">
