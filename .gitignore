@@ -206,3 +206,4 @@
 /*.txt
 /templates/WildStar/node_modules/*
 /templates/WildStar/.sass-cache/*
+/templates/*.zip
