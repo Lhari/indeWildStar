@@ -1,8 +1,15 @@
-.dark {
+form.dark input {
 	background: $dark-background;
 	color: $input-text;
+	border: 1px solid $input-text;
+	padding: $spacing/4 $spacing/2;
 }
-.light {
+
+form.light input {
 	background: $light-background;
 	color: $input-text;
+}
+
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+   color: $input-text;
 }

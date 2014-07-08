@@ -13,4 +13,7 @@ jQuery(document).ready(function () {
 		}
 		
 	})
+	$('.js__more--toggle').click(function() {
+		$('.js__more--toggle').parent().next('js__more').slideToggle();
+	})
 });

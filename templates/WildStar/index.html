@@ -8,8 +8,15 @@
 	</head>
 	<body>
 		<div class="full-width fixed-top" style="z-index: 99;">
-		<div class="js-offcanvas">
-			Log out
+		<div class="preheader grid size-12 js-offcanvas">
+			<div>
+				<form action="/" method="POST" class="dark">
+					<input type="text" name="Username" placeholder="Username" class="right-spacing" />
+					<input type="password" name="password" placeholder="password" class="right-spacing" />
+					<label class="right-spacing"><input type="checkbox" /> Remember me</label>
+					<button class="button button--primary dark">Log in</button>
+				</form>
+			</div>
 		</div>
 			<header class="grid size-12">
 				<div class="header__profile--image left">
@@ -39,12 +46,22 @@
 						<li><a href="/">media</a></li>
 					</ul>
 			</nav>
+			<div class="nav mobile--nav mobile--hidden-above grid size-12--palm align-center">
+				<ul>
+					<li class="active"><a href="*/">home</a></li>
+					<li><a href="/">forums</a></li>
+					<li><a href="/">raiding</a></li>
+					<li><a href="/">roster</a></li>
+					<li><a href="/">apply</a></li>
+					<li><a href="/">media</a></li>
+				</ul>
+			</div>
 		</div>
 		<div class="slider grid size-12">
 			<div class="slider__content grid size-12">
 				<div class="slider__content--arrow right grid size-1"><i class="icon-angle-right"></i></div>
 				<div class="slider__content--arrow left grid size-1"><i class="icon-angle-left"></i></div>
-				<div class="slider__content--fill grid size-10 size-12--palm">
+				<div class="slider__content--fill grid size-10">
 					<img src="images/slider-image-sample.jpg" alt="Slider" class="grid size-5 size-12--palm" />
 					<div class="grid size-6 size-12--palm spacing-left">
 						<h1>Our first Victory!</h1>
@@ -54,16 +71,16 @@
 				</div>
 			</div>
 		</div>
-		<div class="content-wrapper grid size-12">
+		<div class="content-wrapper grid size-12 grid-group">
 			<div id="content">
 				<aside class="grid size-2 size-12--palm left side">
-					<div class="side__recruitment">
+					<div class="side__recruitment grid size-12 size-6--palm">
 						<div class="section-heading row">
-							<span class="side--hide js_more-toggle right right">hide</span>
-							<span class="side--hide js_more-toggle is-hidden right">show</span>
+							<span class="side--hide js__more--toggle right right mobile--is-hidden">hide</span>
+							<span class="side--hide js__more--toggle is-hidden right">show</span>
 							<h3 class="">Recruitment</h3>
 						</div>
-						<div class="js-more">
+						<div class="js__more">
 								<label class="row">
 									<div class="side__recruitment--value right">
 										<span class="closed"></span>
@@ -105,13 +122,13 @@
 							
 						</div>
 					</div>
-					<div class="side__members">
+					<div class="side__members grid size-12 size-6--palm">
 						<div class="section-heading row">
-							<span class="side--hide js-more_toggle right">hide</span>
-							<span class="side--hide js-more_toggle right is-hidden">show</span>
+							<span class="side--hide js__more--toggle right mobile--is-hidden">hide</span>
+							<span class="side--hide js__more--toggle right is-hidden">show</span>
 							<h3>Online Users</h3>
 						</div>
-						<div class="js-more">
+						<div class="js__more">
 							<label class="row"><p class="member">Voldermonk</p></label>
 							<label class="row"><p class="member">Kesara</p></label>
 							<label class="row"><p class="member">Quackers</p></label>
@@ -133,7 +150,7 @@
 							<h2>our first victory</h2>
 						</div>
 						<div class="grid size-12 article__image">
-							<img src="images/slider-image-sample.jpg" alt="" class="grid size-10" />
+							<img src="images/slider-image-sample.jpg" alt="" class="grid size-10 size-12--palm" />
 						</div>
 						<div class="article__text grid size-12">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc adipiscing, velit sit amet imperdiet semper, quam tortor rhoncus magna, eget varius risus arcu in mi. Vivamus ultrices ligula turpis, vel tempus dui vulputate ut. Donec ut ligula sit amet sem viverra luctus. Fusce lacinia, lorem et tempus tempus, quam orci congue nulla, ac posuere sem quam nec ipsum. Nulla sed adipiscing diam, eget bibendum sapien. Aliquam pellentesque viverra dui, sed dignissim arcu auctor eget. Vivamus nisi sapien, tristique id nisl vel, tristique fringilla lectus. Nunc et interdum odio, vel blandit felis. Etiam feugiat bibendum tortor a interdum. Sed vitae nunc mauris.</p>

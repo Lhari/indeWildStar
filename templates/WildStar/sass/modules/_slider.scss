@@ -11,7 +11,17 @@
 	margin: 0 auto;
 
 	.slider__content--arrow {
-		vertical-align: middle;
+		font-size: $font-xxxlarge;
+		opacity: 0.5;
+		@extend .hover;
+
+		&.left {
+			text-align: right;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
 	}
 
 .slider__content--fill {

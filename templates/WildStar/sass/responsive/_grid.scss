@@ -102,3 +102,9 @@ $breakpoints: 'palm', 'lap', 'lap-and-up', 'portable', 'desk', 'desk-wide';
 img.grid {
   padding: 0!important;
 }
+
+@media only screen and (min-width: 681px) {
+  .mobile--hidden-above {
+    display:none!important;
+  }
+}
