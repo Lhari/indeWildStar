@@ -8,16 +8,22 @@ button {
 
 button.button--primary {
 	
-	&.dark {
+		&.dark {
 		border: 1px solid $input-text;
 		color: $input-text;
 		background: #000;
 		padding: $spacing/4 $spacing*1.5;
+		@extend .hover;
+
+		&:hover {
+			color: $blue-color;
+			border-color: $blue-color;
+		}
 	}
 }
 
 button.button--secondary {
-	box-shadow: 2px 0 6px rgba(#231f20, 0.2);
+	box-shadow: 2px 0 6px rgba($shadow-color, 0.2);
 	font-weight: 500;
 	
 	&.light {

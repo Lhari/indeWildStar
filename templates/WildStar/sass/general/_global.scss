@@ -120,3 +120,15 @@ li {
 		display:none;
 	}
 }
+a.dark {
+	color: $input-text;
+	@extend .hover;
+
+	&:hover {
+		color: $blue-color;
+	}
+}
+
+a {
+	text-decoration: none;
+}
