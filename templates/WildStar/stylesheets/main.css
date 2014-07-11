@@ -4,7 +4,7 @@
   -webkit-box-shadow: 5px 0 15px #4c1c06;
           box-shadow: 5px 0 15px #4c1c06; }
 
-.hover, a.dark, .header__profile--data, .js-offcanvas__toggle, nav li a, .slider__content .slider__content--arrow, .side__recent__post span, form.dark input, button, button.button--primary.dark {
+.hover, a.dark, .header__profile--data, .js-offcanvas__toggle, nav li a, .side--hide, .slider__content .slider__content--arrow, .side__recent__post span, form.dark input, button, button.button--primary.dark {
   cursor: pointer;
   -webkit-transition: all 400ms ease;
           transition: all 400ms ease; }
@@ -527,18 +527,19 @@ aside.left {
   color: #ffffff;
   padding-right: 2%; }
   aside.left > div {
-    margin-bottom: 2em; }
+    margin-bottom: 22.08px; }
   aside.left .section-heading {
     border-bottom: 0.15em solid #7687de;
-    font-weight: 100;
-    margin-bottom: 1.2em; }
+    margin-bottom: 14.72px; }
 
 .side--hide {
   text-transform: uppercase;
-  color: #414141;
-  font-size: 8px;
+  color: #4f4f4f;
+  font-size: 10.66667px;
   margin: 4px 0;
   cursor: pointer; }
+  .side--hide:hover {
+    color: #7687de; }
 
 .slider {
   background: url('../images/slider-background-sample.jpg');

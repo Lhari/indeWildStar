@@ -7,19 +7,24 @@ aside.left {
 	color: $base-color1;
 	padding-right: 2%;
 	> div {
-		margin-bottom:2em;
+		margin-bottom: $spacing;
 	}
 	.section-heading {
 		border-bottom: $border-width solid $blue-color;
-		font-weight: 100;
-		margin-bottom:1.2em;
+		margin-bottom: $spacing/1.5;
 	}
 
 }
 .side--hide {
-			text-transform: uppercase;
-			color: #414141;
-			font-size:8px;
-			margin: 4px 0;
-			cursor: pointer;
+	text-transform: uppercase;
+	color: $input-text/1.5;
+	font-size: $font-xsmall;
+	margin: 4px 0;
+	cursor: pointer;
+	@extend .hover;
+
+	&:hover {
+		color: $blue-color;
+	}
+
 }
