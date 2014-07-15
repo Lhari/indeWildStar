@@ -4,10 +4,11 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800);
 
 @import 'settings/_vars';
+@import 'general/_global';
 @import 'general/_fontello';
 // @import 'settings/_settings';
 @import 'responsive/_grid';
-@import 'general/_global';
+@import 'responsive/_offcanvas';
 
 // --- Build
 @import 'general/_preheader';
@@ -22,6 +23,7 @@
 @import 'modules/_recruitment';
 @import 'modules/_members';
 @import 'modules/_recent-posts';
+
 // --- Assets
 
 @import 'assets/_form';

@@ -1,5 +1,5 @@
 .slider {
-	background: $slider-background;
+	background: url($slider-background);
 	background-position: 0 50%;
 	padding-top: 11%;
 	padding-bottom:3%;
@@ -44,5 +44,11 @@
 		p {
 			line-height: $spacing;
 		}
+	}
+}
+
+@media only screen and (max-width: 681px) {
+	.slider {
+		padding-top: $spacing*3;
 	}
 }

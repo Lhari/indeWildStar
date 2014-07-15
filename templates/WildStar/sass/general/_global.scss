@@ -26,6 +26,7 @@ body {
 	width: 100%;
 	font-family: "Open Sans";
 	color: $base-color2;
+	background: linear-gradient(to right, $base-color2 0%,$base-color2 50%,$base-color1 50%,$base-color1 100%);
 }
 
 .wrapper {
@@ -41,10 +42,9 @@ body {
 	width:100%;
 }
 
-.content-wrapper {
-	background: linear-gradient(to right, $base-color2 0%,$base-color2 50%,$base-color1 50%,$base-color1 100%);
-	float:left;
-}
+
+
+
 
 .fixed-top {
 	position: fixed;

@@ -16,12 +16,11 @@
 					<label class="right-spacing"><input type="checkbox" /> Remember me</label>
 					<button class="button button--primary dark right-spacing">Log in</button>
 					<label> or <a class="dark" href="">create</a> an account</label>
-					
 				</form>
 			</div>
 		</div>
 			<header class="grid size-12">
-				<div class="header__profile--image left">
+				<div class="header__profile--image mobile--is-hidden left">
 					<img src="" alt="" />
 				</div>
 				<div class="header__profile left">
@@ -35,7 +34,9 @@
 					<a class="header__profile--data disabled">
 						<i class="icon-user"></i> <span>0</span>
 					</a>
-					
+					<a class="js-offcanvas__toggle mobile--hidden-above">
+						<i class="icon-menu">H</i>
+					</a>
 				</div>
 			</header>
 			<nav class="grid size-12 mobile--is-hidden">
@@ -48,16 +49,6 @@
 						<li><a href="/">media</a></li>
 					</ul>
 			</nav>
-			<div class="nav mobile--nav mobile--hidden-above grid size-12--palm align-center">
-				<ul>
-					<li class="active"><a href="*/">home</a></li>
-					<li><a href="/">forums</a></li>
-					<li><a href="/">raiding</a></li>
-					<li><a href="/">roster</a></li>
-					<li><a href="/">apply</a></li>
-					<li><a href="/">media</a></li>
-				</ul>
-			</div>
 		</div>
 		<div class="slider grid size-12">
 			<div class="slider__content grid size-12">
@@ -73,7 +64,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="content-wrapper grid size-12 grid-group">
+
 			<div id="content">
 				<aside class="grid size-2 size-12--palm left side">
 					<div class="side__recruitment grid size-12 size-6--palm">
@@ -124,7 +115,7 @@
 							
 						</div>
 					</div>
-					<div class="side__recent grid size-12 size-6--palm">
+					<div class="side__recent grid size-12 size-6--palm right">
 						<div class="section-heading row">
 							<span class="side--hide js__more--toggle right mobile--is-hidden">hide</span>
 							<span class="side--hide js__more--toggle right is-hidden">show</span>
@@ -225,9 +216,19 @@
 				</section>
 				<div style="clear:both;"></div>
 			</div>
-		</div>
+
 		<footer class="grid size-12">
 			test
 		</footer>
+		<div class="offcanvas js-offcanvas mobile--hidden-above ">
+				<ul>
+					<li class="active"><a href="*/">home</a></li>
+					<li><a href="/">forums</a></li>
+					<li><a href="/">raiding</a></li>
+					<li><a href="/">roster</a></li>
+					<li><a href="/">apply</a></li>
+					<li><a href="/">media</a></li>
+				</ul>
+			</div>
 	</body>
 </html>
